@@ -44,7 +44,7 @@ local library = {
         ['indicator'] = 950;
         ['window'] = 1000;
         ['dropdown'] = 1200;
-        ['colorpicker'] = 600;
+        ['colorpicker'] = 1100;
         ['watermark'] = 1300;
         ['notification'] = 1400;
         ['cursor'] = 1500;
@@ -1528,7 +1528,7 @@ function library:init()
 
                 objs.background = utility:Draw('Square', {
                     Visible = false;
-                    Size = newUDim2(0,155,0,199);
+                    Size = newUDim2(0,200,0,242);
                     Position = newUDim2(1,-200,1,10);
                     ThemeColor = 'Background';
                     ZIndex = z;
@@ -1571,7 +1571,7 @@ function library:init()
                 })
 
                 objs.mainColor = utility:Draw('Square', {
-                    Size = newUDim2(0, 150, 0, 150);
+                    Size = newUDim2(0, 175, 0, 175);
                     Position = newUDim2(0, 5, 0, 25);
                     Color = c3new(1,0,0);
                     ZIndex = z+2;
@@ -1608,7 +1608,7 @@ function library:init()
                 })
 
                 objs.hue = utility:Draw('Image', {
-                    Size = newUDim2(0,150,0,10);
+                    Size = newUDim2(0,175,0,10);
                     Position = newUDim2(0,5,0,205);
                     Data = library.images.colorhue;
                     ZIndex = z+2;
@@ -1631,7 +1631,7 @@ function library:init()
                 })
 
                 objs.transColor = utility:Draw('Square', {
-                    Size = newUDim2(0,10,0,150);
+                    Size = newUDim2(0,10,0,175);
                     Position = newUDim2(0,185,0,25);
                     Color = c3new(1,0,0);
                     ZIndex = z+2;
