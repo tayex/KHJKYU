@@ -44,7 +44,7 @@ local library = {
         ['indicator'] = 950;
         ['window'] = 1000;
         ['dropdown'] = 1200;
-        ['colorpicker'] = 877;
+        ['colorpicker'] = 600;
         ['watermark'] = 1300;
         ['notification'] = 1400;
         ['cursor'] = 1500;
@@ -1528,7 +1528,7 @@ function library:init()
 
                 objs.background = utility:Draw('Square', {
                     Visible = false;
-                    Size = newUDim2(0,200,0,242);
+                    Size = newUDim2(0,155,0,199);
                     Position = newUDim2(1,-200,1,10);
                     ThemeColor = 'Background';
                     ZIndex = z;
